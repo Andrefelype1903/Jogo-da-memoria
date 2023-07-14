@@ -1,0 +1,16 @@
+{
+    "name": "Jogo da memória",
+    "short_name": "Jogo da memória",
+    "icons": [
+        {
+            "src": "../imagens/source-rick-and-morty-png.png",
+            "sizes": "192x192"
+        }
+    ],
+
+    "start_url": "../index.html",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "backgroud_color": "#ffffff"
+
+}
