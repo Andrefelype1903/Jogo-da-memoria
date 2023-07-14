@@ -1,5 +1,11 @@
 const grid = document.querySelector('.grid')
 
+const spanPlayer = document.querySelector('.player');
+const timer = document.querySelector('.timer');
+
+
+
+
 const personagens = [
     'beth',
     'jerry',
@@ -28,7 +34,11 @@ const checkEndGame = () => {
     const disabledCard = document.querySelectorAll('.disabled-card');
 
     if(disabledCard.length === personagens.length * 2) {
-        setTimeout(() => {alert('fim de jogo')}, 500)
+        clearInterval(this.loop);
+        setTimeout(() => {
+            alert(`Parabens, ${spanPlayer.innerHTML}, seu tempo foi: ${timer.innerHTML} segundos`)
+        }, 500);
+        
         
     }
 
@@ -99,6 +109,8 @@ const createCard = (personagens) => {
 
 const loadGame = () => {
 
+    
+
     const duplicateCharacters = [ ...personagens, ...personagens ]
 
     const shufledArray = duplicateCharacters.sort( () => Math.random() - 0.5 )
@@ -112,7 +124,25 @@ const loadGame = () => {
     })
 }
 
-loadGame()
+
+
+const startTimer = () => {
+
+    this.loop = setInterval(() => {
+
+        const currentTime = +timer.innerHTML;
+        timer.innerHTML = currentTime + 1
+    }, 1000)
+
+}
+
+window.onload = () => {
+
+    spanPlayer.innerHTML = localStorage.getItem('player');
+    startTimer()
+    loadGame()
+}
+
 
 
 
