@@ -103,7 +103,7 @@ header {
 }
 
 .btn-recomecar {
-    width: 40%;
+    width: 65%;
     height: 40px;
     background-color: aqua;
     font-size: 0.6em;
@@ -120,6 +120,10 @@ header {
 
     header {
         font-size: 0.8em;
+    }
+
+    .btn-recomecar {
+        width: 65vw;
     }
 
 }
