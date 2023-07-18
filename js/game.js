@@ -1,8 +1,14 @@
 const grid = document.querySelector('.grid')
 
+const area = document.querySelector('.area')
+
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
 
+const campoParabens = document.querySelector('.parabens');
+const textoParabens = document.querySelector('.texto-parabens');
+
+const btnRecomecar = document.querySelector('.btn-recomecar')
 
 
 
@@ -26,6 +32,7 @@ const createElement = (tag, className) => {
     return element
 }
 
+
 let firstCard = '';
 let secondCard = '';
 
@@ -36,7 +43,12 @@ const checkEndGame = () => {
     if(disabledCard.length === personagens.length * 2) {
         clearInterval(this.loop);
         setTimeout(() => {
-            alert(`Parabens, ${spanPlayer.innerHTML}, seu tempo foi: ${timer.innerHTML} segundos`)
+
+            // alert(`Parabens, ${spanPlayer.innerHTML}, seu tempo foi: ${timer.innerHTML} segundos`);
+            
+            campoParabens.style.display = 'flex';
+            textoParabens.textContent = `Parabens, ${spanPlayer.innerHTML}, seu tempo foi: ${timer.innerHTML} segundos`
+
         }, 500);
         
         
@@ -98,8 +110,12 @@ const createCard = (personagens) => {
 
     front.style.backgroundImage = `url(../imagens/${personagens}.png)`
 
+    
     card.appendChild(front);
-    card.appendChild(back)
+
+    setTimeout(() => {
+        card.appendChild(back)
+    }, 3000)
 
     card.addEventListener('click', revealCard);
     card.setAttribute('data-character', personagens)
@@ -139,9 +155,16 @@ const startTimer = () => {
 window.onload = () => {
 
     spanPlayer.innerHTML = localStorage.getItem('player');
-    startTimer()
     loadGame()
+    setTimeout(() => {
+        startTimer()
+    },3000)
 }
+
+
+btnRecomecar.addEventListener('click', () => {
+    location.reload()
+})
 
 
 
