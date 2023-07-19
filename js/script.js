@@ -3,6 +3,16 @@ const button = document.querySelector('.login_button');
 
 const form = document.querySelector('.login-form');
 
+const divTemas = document.querySelector('.temas');
+
+const btnRick = document.querySelector('.btn-Rick')
+const btndragon = document.querySelector('.btn-dragon')
+const btnSimpsons = document.querySelector('.btn-sinpsons')
+
+
+
+input.focus()
+
 input.addEventListener('input', ({target}) =>  {
     if(target.value.length >= 3) {
         button.removeAttribute('disabled');
@@ -15,8 +25,24 @@ input.addEventListener('input', ({target}) =>  {
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
+
     localStorage.setItem('player', input.value);
-    window.location = 'pages/game.html'
+
+    divTemas.style.display = 'flex'
+    
+    // window.location = 'pages/rick_and_morty.html'
     
 })
 
+btnRick.addEventListener('click', () => {
+    window.location = 'pages/rick_and_morty.html'
+})
+
+btndragon.addEventListener('click', () => {
+    window.location = 'pages/dragonball_z.html'
+})
+
+btnSimpsons.addEventListener('click', () => {
+    window.location = 'pages/simpsons.html'
+
+})
