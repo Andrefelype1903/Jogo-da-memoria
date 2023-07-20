@@ -113,7 +113,7 @@ const createCard = (personagens) => {
     const front = createElement('div', 'face front');
     const back = createElement('div', 'face back');
 
-    front.style.backgroundImage = `url(./imagens/rick_and_morty/${personagens}.png)`
+    front.style.backgroundImage = `url(../imagens/rick_and_morty/${personagens}.png)`
 
     
     card.appendChild(front);
