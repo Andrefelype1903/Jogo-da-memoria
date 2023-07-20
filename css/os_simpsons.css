@@ -6,7 +6,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url(../imagens/Os_Simpsons/Os\ Simpsons\ logo.jpg);
+    background-image: url(../imagens/Os\ Simpsons\ logo.jpg);
     background-size: cover;
     min-height: 100vh;
     align-items: center;
@@ -65,7 +65,7 @@ header {
 }
 
 .back {
-    background-image: url(../imagens/Os_Simpsons/hemer_back.png);
+    background-image: url(../imagens/hemer_back.png);
     backface-visibility: hidden;
 }
 
@@ -82,7 +82,7 @@ header {
     position: absolute;
     width: 70vw;
     height: 70vh;
-    background-image: url(../imagens/Os_Simpsons/wallpapersden.com_bart-4k-simpson_3840x2160.png);
+    background-image: url(../imagens/wallpapersden.com_bart-4k-simpson_3840x2160.png);
     background-size: cover;
     background-position: center;
     display: none;

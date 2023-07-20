@@ -6,7 +6,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url(../imagens/Dragonball_z/thumb-1920-933307.png);
+    background-image: url(../imagens/thumb-1920-933307.png);
     background-position: center;
     background-size: cover;
     min-height: 100vh;
@@ -68,7 +68,7 @@ header {
 }
 
 .back {
-    background-image: url(../imagens/Dragonball_z/wp7382693.png);
+    background-image: url(../imagens/wp7382693.png);
     background-size: cover;
     background-position: center;
     backface-visibility: hidden;
@@ -87,7 +87,7 @@ header {
     position: absolute;
     width: 70vw;
     height: 70vh;
-    background-image: url(../imagens/Dragonball_z/parabens.png);
+    background-image: url(../imagens/parabens.png);
     background-size: cover;
     background-position: center;
     display: none;

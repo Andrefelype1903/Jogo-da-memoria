@@ -53,20 +53,20 @@
 }
 
 .temas button:nth-child(2):hover {
-    background-image: url(../imagens/Rick_and_morty/fundo_botao.png);
+    background-image: url(../imagens/fundo_botao.png);
     background-size: cover;
     background-position: center;
 }
 
 .temas button:nth-child(3):hover {
-    background-image: url(../imagens/Dragonball_z/nCgtBc.png);
+    background-image: url(../imagens/nCgtBc.png);
     background-size: cover;
     background-position: center;
 }
 
 
 .temas button:nth-child(4):hover {
-    background-image: url(../imagens/Os_Simpsons/fundo_botao.png);
+    background-image: url(../imagens/fundo_botao.png);
     background-size: cover;
     background-position: center;
 }

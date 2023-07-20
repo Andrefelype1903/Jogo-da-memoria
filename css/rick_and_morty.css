@@ -6,7 +6,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url(../imagens/Rick_and_morty/bg.jpg);
+    background-image: url(../imagens/bg.jpg);
     background-size: cover;
     min-height: 100vh;
     align-items: center;
@@ -65,7 +65,7 @@ header {
 }
 
 .back {
-    background-image: url(../imagens/Rick_and_morty/back.png);
+    background-image: url(../imagens/back.png);
     backface-visibility: hidden;
 }
 
@@ -82,7 +82,7 @@ header {
     position: absolute;
     width: 70vw;
     height: 70vh;
-    background-image: url(../imagens/Rick_and_morty/rick\ and\ morty.jpg);
+    background-image: url(../imagens/rick\ and\ morty.jpg);
     background-size: cover;
     background-position: center;
     display: none;
