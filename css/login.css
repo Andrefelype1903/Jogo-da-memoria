@@ -1,9 +1,10 @@
 
 body {
+    background-color: #fafafa;
     background-image: '';
     background-size: cover;
     background-position: center;
-    transition: 1s all;
+    transition: '1s all';
 }
 
 .login-form {

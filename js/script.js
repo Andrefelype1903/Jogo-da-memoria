@@ -43,7 +43,9 @@ form.addEventListener('submit', (event) => {
 
 // botao Rick and Morty
 btnRick.addEventListener('click', () => {
+    
     if(tamanhoTela <= 600) {
+        areaFundo.style.backgroundImage = 'url(../imagens/bg.jpg)'
         setTimeout(() => {
             window.location = 'pages/rick_and_morty.html'
         },2000)
@@ -64,9 +66,10 @@ btnRick.addEventListener('mouseout', () => {
 // Botao dragon ball z
 btndragon.addEventListener('click', () => {
     if(tamanhoTela <= 600) {
+        areaFundo.style.backgroundImage = 'url(../imagens/thumb-1920-933307.png)';
         setTimeout(() => {
-            window.location = 'pages/dragonball_z.html'
-        },2000)
+            window.location = 'pages/dragonball_z.html';
+        },2000);
     } else {
         window.location = 'pages/dragonball_z.html'
     }
@@ -84,11 +87,12 @@ btndragon.addEventListener('mouseout', () => {
 // Botao Os Simpsons
 btnSimpsons.addEventListener('click', () => {
     if(tamanhoTela <= 600) {
+        areaFundo.style.backgroundImage = 'url(../imagens/Os_Simpsons_logo.jpg)';
         setTimeout(() => {
-            window.location = 'pages/simpsons.html'
+            window.location = 'pages/simpsons.html';
         },2000)
     } else {
-        window.location = 'pages/simpsons.html'
+        window.location = 'pages/simpsons.html';
     }
 })
 
@@ -104,11 +108,12 @@ btnSimpsons.addEventListener('mouseout', () => {
 // Botao Naruto Shippuden
 btnNaruto.addEventListener('click', () => {
     if(tamanhoTela <= 600) {
+        areaFundo.style.backgroundImage = 'url(../imagens/fundo_naruto.jpg)';
         setTimeout(() => {
-            window.location = 'pages/naruto.html'
-        },2000)
+            window.location = 'pages/naruto.html';
+        },2000);
     } else {
-        window.location = 'pages/naruto.html'
+        window.location = 'pages/naruto.html';
     }
 })
  
@@ -124,6 +129,7 @@ btnNaruto.addEventListener('mouseout', () => {
 // Botao Os Vingadores
 btnAvengers.addEventListener('click', () => {
     if(tamanhoTela <= 600) {
+        areaFundo.style.backgroundImage = 'url(../imagens/fundo_avengers.jpg)';
         setTimeout(() => {
             window.location = 'pages/avengers.html'
         },2000)
