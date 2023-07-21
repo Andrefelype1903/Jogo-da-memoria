@@ -1,3 +1,11 @@
+
+body {
+    background-image: '';
+    background-size: cover;
+    background-position: center;
+    transition: 1s all;
+}
+
 .login-form {
     align-items: center;
     display: flex;
@@ -26,7 +34,7 @@
 /* temas */
 
 .temas {
-    background-color: #ee665c;
+    background-color: rgb(238, 102, 92, 0.5);
     margin-bottom: 20px;
     font-size: 0.8em;
     display: none;
