@@ -62,6 +62,10 @@ btnRick.addEventListener('mouseout', () => {
     areaFundo.style.backgroundImage = ''
 })
 
+btnRick.addEventListener('touchstart', () => {
+    areaFundo.style.backgroundImage = 'url(../imagens/bg.jpg)'
+})
+
 
 // Botao dragon ball z
 btndragon.addEventListener('click', () => {
@@ -81,6 +85,10 @@ btndragon.addEventListener('mouseover', () => {
 
 btndragon.addEventListener('mouseout', () => {
     areaFundo.style.backgroundImage = ''
+})
+
+btndragon.addEventListener('touchstart', () => {
+   areaFundo.style.backgroundImage = 'url(../imagens/thumb-1920-933307.png)'
 })
 
 
@@ -104,6 +112,10 @@ btnSimpsons.addEventListener('mouseout', () => {
     areaFundo.style.backgroundImage = ''
 })
 
+btnSimpsons.addEventListener('touchstart', () => {
+    areaFundo.style.backgroundImage = 'url(../imagens/Os_Simpsons_logo.jpg)'
+})
+
 
 // Botao Naruto Shippuden
 btnNaruto.addEventListener('click', () => {
@@ -125,6 +137,10 @@ btnNaruto.addEventListener('mouseout', () => {
     areaFundo.style.backgroundImage = ''
 })
 
+btnNaruto.addEventListener('touchstart', () => {
+    areaFundo.style.backgroundImage = 'url(../imagens/fundo_naruto.jpg)'
+})
+
 
 // Botao Os Vingadores
 btnAvengers.addEventListener('click', () => {
@@ -144,5 +160,9 @@ btnAvengers.addEventListener('mouseover', () => {
 
 btnAvengers.addEventListener('mouseout', () => {
     areaFundo.style.backgroundImage = ''
+})
+
+btnAvengers.addEventListener('touchstart', () => {
+    areaFundo.style.backgroundImage = 'url(../imagens/fundo_avengers.jpg)';
 })
 
