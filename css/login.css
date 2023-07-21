@@ -71,6 +71,18 @@
     background-position: center;
 }
 
+.temas button:nth-child(5):hover {
+    background-image: url(../imagens/botao_akatsuki.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.temas button:nth-child(6):hover {
+    background-image: url(../imagens/botao_avengers.png);
+    background-size: cover;
+    background-position: center;
+}
+
 /* temas */
 
 .login_input {

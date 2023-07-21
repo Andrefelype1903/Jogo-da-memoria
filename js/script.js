@@ -8,6 +8,8 @@ const divTemas = document.querySelector('.temas');
 const btnRick = document.querySelector('.btn-Rick')
 const btndragon = document.querySelector('.btn-dragon')
 const btnSimpsons = document.querySelector('.btn-sinpsons')
+const btnNaruto = document.querySelector('.btn-naruto')
+const btnAvengers = document.querySelector('.btn-avengers')
 
 
 
@@ -44,5 +46,12 @@ btndragon.addEventListener('click', () => {
 
 btnSimpsons.addEventListener('click', () => {
     window.location = 'pages/simpsons.html'
+})
 
+btnNaruto.addEventListener('click', () => {
+    window.location = 'pages/naruto.html'
+})
+
+btnAvengers.addEventListener('click', () => {
+    window.location = 'pages/avengers.html'
 })
