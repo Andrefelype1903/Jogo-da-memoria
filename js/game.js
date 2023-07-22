@@ -18,6 +18,8 @@ const btndragon = document.querySelector('.btn-dragon');
 const btnSimpsons = document.querySelector('.btn-sinpsons');
 const btnNaruto = document.querySelector('.btn-naruto');
 const btnAvengers = document.querySelector('.btn-avengers');
+const btngodOfWar = document.querySelector('.btn-godofwar');
+const btnTheLastOfUs = document.querySelector('.btn-thelastofus');
 
 const areaFundo = document.querySelector('body');
 
@@ -151,6 +153,53 @@ const temaAvengers = () => {
     backCardBorder = '2px solid #800080';
     faceCards = '2px solid #800080';
     campoParabens.style.backgroundImage = 'url(../imagens/parabens_avengers.jpg)';
+}
+
+const temaGodofWarRagnarok = () => {
+
+    temas.style.display = 'none';
+  
+    header.style.display = 'flex';
+    personagens.push( 'angrboda',
+    'brok',
+    'sindri',
+    'kratos',
+    'atreus',
+    'freya',
+    'fenrir',
+    'valquiria',
+    'elfo_escuro',
+    'thor',);
+
+    areaFundo.style.backgroundImage = 'url(../imagens/fundo_botao_ragnarok.jpg)';
+    areaFundo.style.backgroundPosition = '70%'
+    backCards = 'url(../imagens/back_ragnarok.png)';
+    backCardBorder = '2px solid #add8e6';
+    faceCards = '2px solid #add8e6';
+    campoParabens.style.backgroundImage = 'url(../imagens/parabens_ragnarok.png)';
+}
+
+const temaTheLastOfUs = () => {
+
+    temas.style.display = 'none';
+  
+    header.style.display = 'flex';
+    personagens.push( 'ellie',
+    'joel',
+    'abby',
+    'rat_king',
+    'tommy',
+    'gina',
+    'tropego',
+    'baiacu',
+    'jessie',
+    'clicker',);
+
+    areaFundo.style.backgroundImage = 'url(../imagens/fundo_botao_ellie.jpg)';
+    backCards = 'url(../imagens/back_the_last_of_us.png)';
+    backCardBorder = '2px solid #4b3621';
+    faceCards = '2px solid #4b3621';
+    campoParabens.style.backgroundImage = 'url(../imagens/parabens_the_last_of_us.png)';
 }
 
 const createElement = (tag, className) => {
@@ -390,6 +439,7 @@ btnNaruto.addEventListener('click', () => {
  
 btnNaruto.addEventListener('mouseover', () => {
     main.style.backgroundImage = 'url(../imagens/fundo_naruto.jpg)'
+    main.style.backgroundPosition = '70%';
 })
 
 btnNaruto.addEventListener('mouseout', () => {
@@ -398,6 +448,7 @@ btnNaruto.addEventListener('mouseout', () => {
 
 btnNaruto.addEventListener('touchstart', () => {
     main.style.backgroundImage = 'url(../imagens/fundo_naruto.jpg)'
+    main.style.backgroundPosition = '70%';
 })
 
 
@@ -424,4 +475,59 @@ btnAvengers.addEventListener('mouseout', () => {
 
 btnAvengers.addEventListener('touchstart', () => {
     main.style.backgroundImage = 'url(../imagens/fundo_avengers.jpg)';
+})
+
+
+
+// Botao God of war ragnarok
+btngodOfWar.addEventListener('click', () => {
+    if(tamanhoTela <= 600) {
+        setTimeout(() => {
+            temaGodofWarRagnarok();
+            onload();
+        },2000)
+    } else {
+        temaGodofWarRagnarok();
+        onload();
+    }
+})
+
+btngodOfWar.addEventListener('mouseover', () => {
+    main.style.backgroundImage = 'url(../imagens/fundo_botao_ragnarok.jpg)';
+    main.style.backgroundPosition = '70%';
+})
+
+btngodOfWar.addEventListener('mouseout', () => {
+    main.style.backgroundImage = ''
+})
+
+btngodOfWar.addEventListener('touchstart', () => {
+    main.style.backgroundImage = 'url(../imagens/fundo_botao_ragnarok.jpg)';
+    main.style.backgroundPosition = '70%';
+})
+
+
+// Botao The last of us II
+btnTheLastOfUs.addEventListener('click', () => {
+    if(tamanhoTela <= 600) {
+        setTimeout(() => {
+            temaTheLastOfUs();
+            onload();
+        },2000)
+    } else {
+        temaTheLastOfUs();
+        onload();
+    }
+})
+
+btnTheLastOfUs.addEventListener('mouseover', () => {
+    main.style.backgroundImage = 'url(../imagens/fundo_the_last_of_us.jpeg)';
+})
+
+btnTheLastOfUs.addEventListener('mouseout', () => {
+    main.style.backgroundImage = ''
+})
+
+btnTheLastOfUs.addEventListener('touchstart', () => {
+    main.style.backgroundImage = 'url(../imagens/fundo_the_last_of_us.jpeg)';
 })

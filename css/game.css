@@ -13,7 +13,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: '';
+    background-image:'';
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -71,6 +71,7 @@ header {
     background-image: url(../imagens/fundo_botao_rick.png);
     background-size: cover;
     background-position: center;
+
 }
 
 .temas button:nth-child(3):hover {
@@ -94,6 +95,18 @@ header {
 
 .temas button:nth-child(6):hover {
     background-image: url(../imagens/botao_avengers.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.temas button:nth-child(7):hover {
+    background-image: url(../imagens/fundo_botao_ragnarok.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.temas button:nth-child(8):hover {
+    background-image: url(../imagens/fundo_botao_ellie.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -126,7 +139,7 @@ header {
     position: absolute;
     background-size: cover;
     background-position: center;
-    /* border: 2px solid #39813a; */
+    /* border: 2px solid #add8e6; */
     border: '';
     border-radius: 5px;
     transition: all 400ms ease;
@@ -138,7 +151,7 @@ header {
 }
 
 .back {
-    background-image: "";
+    background-image:'';
     backface-visibility: hidden;
 }
 
