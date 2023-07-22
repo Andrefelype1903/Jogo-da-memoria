@@ -1,11 +1,5 @@
 
-body {
-    background-color: #fafafa;
-    background-image: '';
-    background-size: cover;
-    background-position: center;
-    transition: '1s all';
-}
+
 
 .login-form {
     align-items: center;
@@ -31,68 +25,6 @@ body {
     color: #333;
     font-size: 1.5em;
 }
-
-/* temas */
-
-.temas {
-    background-color: rgb(238, 102, 92, 0.5);
-    margin-bottom: 20px;
-    font-size: 0.8em;
-    display: none;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.temas h3 {
-    margin: 10px 0;
-}
-
-.temas button {
-    height: 60px;
-    margin: 5px 10px ;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: 1s all;
-}
-
-.temas button:hover {
-    transform: scale(1.2);
-    background: lightgray;
-}
-
-.temas button:nth-child(2):hover {
-    background-image: url(../imagens/fundo_botao_rick.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.temas button:nth-child(3):hover {
-    background-image: url(../imagens/nCgtBc.png);
-    background-size: cover;
-    background-position: center;
-}
-
-
-.temas button:nth-child(4):hover {
-    background-image: url(../imagens/fundo_botao.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.temas button:nth-child(5):hover {
-    background-image: url(../imagens/botao_akatsuki.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.temas button:nth-child(6):hover {
-    background-image: url(../imagens/botao_avengers.png);
-    background-size: cover;
-    background-position: center;
-}
-
-/* temas */
 
 .login_input {
     border: 2px solid #333;

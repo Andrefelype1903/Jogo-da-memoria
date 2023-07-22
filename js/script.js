@@ -3,21 +3,6 @@ const button = document.querySelector('.login_button');
 
 const form = document.querySelector('.login-form');
 
-const divTemas = document.querySelector('.temas');
-
-const btnRick = document.querySelector('.btn-Rick')
-const btndragon = document.querySelector('.btn-dragon')
-const btnSimpsons = document.querySelector('.btn-sinpsons')
-const btnNaruto = document.querySelector('.btn-naruto')
-const btnAvengers = document.querySelector('.btn-avengers');
-
-const areaFundo = document.querySelector('body')
-
-const tamanhoTela = window.innerWidth;
-console.log(tamanhoTela);
-
-
-
 input.focus()
 
 input.addEventListener('input', ({target}) =>  {
@@ -32,137 +17,9 @@ input.addEventListener('input', ({target}) =>  {
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-
     localStorage.setItem('player', input.value);
-
-    divTemas.style.display = 'flex'
     
-    // window.location = 'pages/rick_and_morty.html'
+    window.location = 'pages/game.html'
     
-})
-
-// botao Rick and Morty
-btnRick.addEventListener('click', () => {
-    
-    if(tamanhoTela <= 600) {
-        areaFundo.style.backgroundImage = 'url(../imagens/bg.jpg)'
-        setTimeout(() => {
-            window.location = 'pages/rick_and_morty.html'
-        },2000)
-    } else {
-        window.location = 'pages/rick_and_morty.html'
-    }
-})
-
-btnRick.addEventListener('mouseover', () => {
-    areaFundo.style.backgroundImage = 'url(../imagens/bg.jpg)'
-})
-
-btnRick.addEventListener('mouseout', () => {
-    areaFundo.style.backgroundImage = ''
-})
-
-btnRick.addEventListener('touchstart', () => {
-    areaFundo.style.backgroundImage = 'url(../imagens/bg.jpg)'
-})
-
-
-// Botao dragon ball z
-btndragon.addEventListener('click', () => {
-    if(tamanhoTela <= 600) {
-        areaFundo.style.backgroundImage = 'url(../imagens/thumb-1920-933307.png)';
-        setTimeout(() => {
-            window.location = 'pages/dragonball_z.html';
-        },2000);
-    } else {
-        window.location = 'pages/dragonball_z.html'
-    }
-})
-
-btndragon.addEventListener('mouseover', () => {
-   areaFundo.style.backgroundImage = 'url(../imagens/thumb-1920-933307.png)'
-})
-
-btndragon.addEventListener('mouseout', () => {
-    areaFundo.style.backgroundImage = ''
-})
-
-btndragon.addEventListener('touchstart', () => {
-   areaFundo.style.backgroundImage = 'url(../imagens/thumb-1920-933307.png)'
-})
-
-
-// Botao Os Simpsons
-btnSimpsons.addEventListener('click', () => {
-    if(tamanhoTela <= 600) {
-        areaFundo.style.backgroundImage = 'url(../imagens/Os_Simpsons_logo.jpg)';
-        setTimeout(() => {
-            window.location = 'pages/simpsons.html';
-        },2000)
-    } else {
-        window.location = 'pages/simpsons.html';
-    }
-})
-
-btnSimpsons.addEventListener('mouseover', () => {
-    areaFundo.style.backgroundImage = 'url(../imagens/Os_Simpsons_logo.jpg)'
-})
-
-btnSimpsons.addEventListener('mouseout', () => {
-    areaFundo.style.backgroundImage = ''
-})
-
-btnSimpsons.addEventListener('touchstart', () => {
-    areaFundo.style.backgroundImage = 'url(../imagens/Os_Simpsons_logo.jpg)'
-})
-
-
-// Botao Naruto Shippuden
-btnNaruto.addEventListener('click', () => {
-    if(tamanhoTela <= 600) {
-        areaFundo.style.backgroundImage = 'url(../imagens/fundo_naruto.jpg)';
-        setTimeout(() => {
-            window.location = 'pages/naruto.html';
-        },2000);
-    } else {
-        window.location = 'pages/naruto.html';
-    }
-})
- 
-btnNaruto.addEventListener('mouseover', () => {
-    areaFundo.style.backgroundImage = 'url(../imagens/fundo_naruto.jpg)'
-})
-
-btnNaruto.addEventListener('mouseout', () => {
-    areaFundo.style.backgroundImage = ''
-})
-
-btnNaruto.addEventListener('touchstart', () => {
-    areaFundo.style.backgroundImage = 'url(../imagens/fundo_naruto.jpg)'
-})
-
-
-// Botao Os Vingadores
-btnAvengers.addEventListener('click', () => {
-    if(tamanhoTela <= 600) {
-        areaFundo.style.backgroundImage = 'url(../imagens/fundo_avengers.jpg)';
-        setTimeout(() => {
-            window.location = 'pages/avengers.html'
-        },2000)
-    } else {
-        window.location = 'pages/avengers.html'
-    }
-})
-
-btnAvengers.addEventListener('mouseover', () => {
-    areaFundo.style.backgroundImage = 'url(../imagens/fundo_avengers.jpg)';
-})
-
-btnAvengers.addEventListener('mouseout', () => {
-    areaFundo.style.backgroundImage = ''
-})
-
-btnAvengers.addEventListener('touchstart', () => {
-    areaFundo.style.backgroundImage = 'url(../imagens/fundo_avengers.jpg)';
 })
 
