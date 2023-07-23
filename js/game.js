@@ -21,6 +21,8 @@ const btnAvengers = document.querySelector('.btn-avengers');
 const btngodOfWar = document.querySelector('.btn-godofwar');
 const btnTheLastOfUs = document.querySelector('.btn-thelastofus');
 
+const todosBtn = document.querySelectorAll('.btn-tema')
+
 const areaFundo = document.querySelector('body');
 
 const tamanhoTela = window.innerWidth;
@@ -31,6 +33,10 @@ const campoParabens = document.querySelector('.parabens');
 const textoParabens = document.querySelector('.texto-parabens');
 
 const btnRecomecar = document.querySelector('.btn-recomecar')
+
+const dicas = document.querySelector('.dicas')
+const btnDicaSim = document.querySelector('.btn-dica-sim')
+const btnDicaNao = document.querySelector('.btn-dica-nao')
 
 
 const personagens = [];
@@ -195,7 +201,7 @@ const temaTheLastOfUs = () => {
     'jessie',
     'clicker',);
 
-    areaFundo.style.backgroundImage = 'url(../imagens/fundo_botao_ellie.jpg)';
+    areaFundo.style.backgroundImage = 'url(../imagens/fundo_the_last_of_us.jpeg)';
     backCards = 'url(../imagens/back_the_last_of_us.png)';
     backCardBorder = '2px solid #4b3621';
     faceCards = '2px solid #4b3621';
@@ -275,6 +281,8 @@ const revealCard = ({target}) => {
 
 }
 
+
+
 const createCard = (personagens) => {
 
     const card = createElement('div', 'card');
@@ -290,10 +298,21 @@ const createCard = (personagens) => {
 
     setTimeout(() => {
         card.appendChild(back)
-    }, 3000)
-
-    card.addEventListener('click', revealCard);
+        card.addEventListener('click', revealCard);
+    }, 3000);
+    
     card.setAttribute('data-character', personagens)
+
+
+    btnDicaSim.addEventListener('click', () => {
+    
+        back.style.display = 'none';
+        dicas.style.display = 'none';
+        setTimeout(() => {
+            back.style.display = 'flex';
+        },3000)
+    })
+    
 
     return card;
 }
@@ -321,9 +340,14 @@ const startTimer = () => {
     this.loop = setInterval(() => {
 
         const currentTime = +timer.innerHTML;
-        timer.innerHTML = currentTime + 1
-    }, 1000)
+        timer.innerHTML = currentTime + 1;
 
+        if(timer.innerHTML > 60 && timer.innerHTML < 62) {
+            dicas.style.display = 'flex'
+        }
+
+    }, 1000)
+   
 }
 
 const onload = () => {
@@ -341,10 +365,27 @@ btnRecomecar.addEventListener('click', () => {
 })
 
 
+btnDicaNao.addEventListener('click', () => {
+    dicas.style.display = 'none'
+})
+
+
+
 
 // botoes de temas ↓
 
 // botao Rick and Morty
+
+const desabilitaBotoes = () => {
+  btnRick.disabled = true;
+  btndragon.disabled = true;
+  btnSimpsons.disabled = true;
+  btnNaruto.disabled = true;
+  btnAvengers.disabled = true;
+  btngodOfWar.disabled = true;
+  btnTheLastOfUs.disabled = true;
+}
+
 btnRick.addEventListener('click', () => {
     console.log('cliquei com mouse')
     if(tamanhoTela <= 600) {
@@ -356,6 +397,7 @@ btnRick.addEventListener('click', () => {
         temaRickAndMorty();
         onload();
     }
+    desabilitaBotoes();
 })
 
 btnRick.addEventListener('mouseover', () => {
@@ -383,6 +425,7 @@ btndragon.addEventListener('click', () => {
         temaDragonBallZ();
         onload()
     }
+    desabilitaBotoes();
 })
 
 btndragon.addEventListener('mouseover', () => {
@@ -409,6 +452,7 @@ btnSimpsons.addEventListener('click', () => {
         temaOsSimpsons();
         onload();
     }
+    desabilitaBotoes();
 })
 
 btnSimpsons.addEventListener('mouseover', () => {
@@ -435,6 +479,7 @@ btnNaruto.addEventListener('click', () => {
         temaNarutoShippuden();
         onload();
     }
+    desabilitaBotoes();
 })
  
 btnNaruto.addEventListener('mouseover', () => {
@@ -463,6 +508,7 @@ btnAvengers.addEventListener('click', () => {
         temaAvengers();
         onload();
     }
+    desabilitaBotoes();
 })
 
 btnAvengers.addEventListener('mouseover', () => {
@@ -490,6 +536,7 @@ btngodOfWar.addEventListener('click', () => {
         temaGodofWarRagnarok();
         onload();
     }
+    desabilitaBotoes();
 })
 
 btngodOfWar.addEventListener('mouseover', () => {
@@ -518,6 +565,7 @@ btnTheLastOfUs.addEventListener('click', () => {
         temaTheLastOfUs();
         onload();
     }
+    desabilitaBotoes();
 })
 
 btnTheLastOfUs.addEventListener('mouseover', () => {
