@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap');
 
 
+
+
 body {
     background-color: #fafafa;
     background-image: '';
@@ -41,13 +43,17 @@ header {
 
 .temas {
     background-color: rgb(238, 102, 92, 0.5);
+    width: 85vw;
+    max-width: 400px;
     margin-bottom: 20px;
-    font-size: 0.8em;
+    font-size: 1em;
     display: flex;
     position: absolute;
     flex-direction: column;
     padding: 20px;
     border-radius: 10px;
+    text-align: center;
+    
 }
 
 .temas h3 {
@@ -60,6 +66,8 @@ header {
     cursor: pointer;
     border-radius: 10px;
     transition: 1s all;
+    padding: 10px;
+    font-size: 2.2em;
 }
 
 .temas button:hover {
