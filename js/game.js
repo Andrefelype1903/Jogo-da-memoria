@@ -20,6 +20,7 @@ const btnNaruto = document.querySelector('.btn-naruto');
 const btnAvengers = document.querySelector('.btn-avengers');
 const btngodOfWar = document.querySelector('.btn-godofwar');
 const btnTheLastOfUs = document.querySelector('.btn-thelastofus');
+const btnResidentEvil = document.querySelector('.btn-residentevil');
 
 const todosBtn = document.querySelectorAll('.btn-tema')
 
@@ -207,6 +208,29 @@ const temaTheLastOfUs = () => {
     faceCards = '2px solid #4b3621';
     campoParabens.style.backgroundImage = 'url(../imagens/parabens_the_last_of_us.png)';
 }
+
+const temaResidentEvil = () => {
+    temas.style.display = 'none';
+  
+    header.style.display = 'flex';
+    personagens.push( 'ada',
+    'chris',
+    'ashley',
+    'claire_redfield',
+    'dimitrescu',
+    'hunk',
+    'jill',
+    'leon',
+    'mia',
+    'nemesis',);
+
+    areaFundo.style.backgroundImage = 'url(../imagens/tela_fundo_resident-evil.jpg)';
+    backCards = 'url(../imagens/back_resident_evil.png)';
+    backCardBorder = '2px solid #ff0000';
+    faceCards = '2px solid #ff0000';
+    campoParabens.style.backgroundImage = 'url(../imagens/parabens_resident.png)';
+}
+
 
 const createElement = (tag, className) => {
     const element = document.createElement(tag);
@@ -578,4 +602,30 @@ btnTheLastOfUs.addEventListener('mouseout', () => {
 
 btnTheLastOfUs.addEventListener('touchstart', () => {
     main.style.backgroundImage = 'url(../imagens/fundo_the_last_of_us.jpeg)';
+})
+
+// Botao Resident Evil
+btnResidentEvil.addEventListener('click', () => {
+    if(tamanhoTela <= 600) {
+        setTimeout(() => {
+            temaResidentEvil();
+            onload();
+        },2000)
+    } else {
+        temaResidentEvil();
+        onload();
+    }
+    desabilitaBotoes();
+})
+
+btnResidentEvil.addEventListener('mouseover', () => {
+    main.style.backgroundImage = 'url(../imagens/tela_fundo_resident-evil.jpg)';
+})
+
+btnResidentEvil.addEventListener('mouseout', () => {
+    main.style.backgroundImage = ''
+})
+
+btnResidentEvil.addEventListener('touchstart', () => {
+    main.style.backgroundImage = 'url(../imagens/tela_fundo_resident-evil.jpg)';
 })

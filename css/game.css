@@ -111,6 +111,12 @@ header {
     background-position: center;
 }
 
+.temas button:nth-child(9):hover {
+    background-image: url(../imagens/fundo_botao_resident_evil.png);
+    background-size: cover;
+    background-position: center;
+}
+
 /* temas */
 
 .grid {
