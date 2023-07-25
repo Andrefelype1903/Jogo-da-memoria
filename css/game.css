@@ -37,6 +37,7 @@ header {
     padding: 30px;
     margin: 0 0 30px;
     border-radius: 5px;
+    font-size: 1.8rem;
 }
 
 /* temas */
@@ -58,6 +59,7 @@ header {
 
 .temas h3 {
     margin: 10px 0;
+    font-size: 2.2rem;
 }
 
 .temas button {
@@ -121,6 +123,12 @@ header {
 
 .temas button:nth-child(9):hover {
     background-image: url(../imagens/fundo_botao_resident_evil.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.temas button:nth-child(10):hover {
+    background-image: url(../imagens/fundo_botao_thrones.png);
     background-size: cover;
     background-position: center;
 }
@@ -193,7 +201,7 @@ header {
     z-index: 10;
     padding: 40px;
     text-align: center;
-    font-size: 1.9em;
+    font-size: 1.7em;
     font-weight: 800;
     border-radius: 20px;
 }
@@ -209,7 +217,7 @@ header {
     width: 65%;
     height: 40px;
     background-color: aqua;
-    font-size: 0.6em;
+    font-size: 1em;
     cursor: pointer;
     border-radius: 20px;
     margin-top: 50px;

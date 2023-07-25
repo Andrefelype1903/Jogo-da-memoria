@@ -21,6 +21,8 @@ const btnAvengers = document.querySelector('.btn-avengers');
 const btngodOfWar = document.querySelector('.btn-godofwar');
 const btnTheLastOfUs = document.querySelector('.btn-thelastofus');
 const btnResidentEvil = document.querySelector('.btn-residentevil');
+const btnGameOfThrones = document.querySelector('.btn-gameofthrones');
+
 
 const todosBtn = document.querySelectorAll('.btn-tema')
 
@@ -132,7 +134,7 @@ const temaNarutoShippuden = () => {
     'madara',);
 
     areaFundo.style.backgroundImage = 'url(../imagens/fundo_naruto.jpg)';
-    areaFundo.style.backgroundPosition = '70%'
+    areaFundo.style.backgroundPosition = '70%';
     backCards = 'url(../imagens/back_naruto.png)';
     backCardBorder = '2px solid #ff0000';
     faceCards = '2px solid #ff0000';
@@ -156,7 +158,7 @@ const temaAvengers = () => {
     'ultron',);
 
     areaFundo.style.backgroundImage = 'url(../imagens/fundo_avengers.jpg)';
-    backCards = 'url(../imagens/back_avengers.png)';
+    backCards = 'url(../imagens/back2_avengers.png)';
     backCardBorder = '2px solid #800080';
     faceCards = '2px solid #800080';
     campoParabens.style.backgroundImage = 'url(../imagens/parabens_avengers.jpg)';
@@ -229,6 +231,29 @@ const temaResidentEvil = () => {
     backCardBorder = '2px solid #ff0000';
     faceCards = '2px solid #ff0000';
     campoParabens.style.backgroundImage = 'url(../imagens/parabens_resident.png)';
+}
+
+const temaGameOfThrones = () => {
+    temas.style.display = 'none';
+  
+    header.style.display = 'flex';
+    personagens.push( 'sansa',
+    'jaime',
+    'missandei',
+    'rei_da_noite',
+    'john',
+    'drogon',
+    'daneris',
+    'bolton',
+    'arya',
+    'tiryon',);
+
+    areaFundo.style.backgroundImage = 'url(../imagens/fundo_thrones.png)';
+    areaFundo.style.backgroundPosition = '70%';
+    backCards = 'url(../imagens/back_thrones.png)';
+    backCardBorder = '2px solid #888';
+    faceCards = '2px solid #888';
+    campoParabens.style.backgroundImage = 'url(../imagens/parabens_thrones.png)';
 }
 
 
@@ -408,6 +433,8 @@ const desabilitaBotoes = () => {
   btnAvengers.disabled = true;
   btngodOfWar.disabled = true;
   btnTheLastOfUs.disabled = true;
+  btnResidentEvil.disabled = true;
+  btnGameOfThrones.disabled = true;
 }
 
 btnRick.addEventListener('click', () => {
@@ -629,3 +656,31 @@ btnResidentEvil.addEventListener('mouseout', () => {
 btnResidentEvil.addEventListener('touchstart', () => {
     main.style.backgroundImage = 'url(../imagens/tela_fundo_resident-evil.jpg)';
 })
+
+
+// Botao Game of Thrones
+btnGameOfThrones.addEventListener('click', () => {
+    if(tamanhoTela <= 600) {
+        setTimeout(() => {
+            temaGameOfThrones();
+            onload();
+        },2000)
+    } else {
+        temaGameOfThrones();
+        onload();
+    }
+    desabilitaBotoes();
+})
+
+btnGameOfThrones.addEventListener('mouseover', () => {
+    main.style.backgroundImage = 'url(../imagens/fundo_thrones.png)';
+})
+
+btnGameOfThrones.addEventListener('mouseout', () => {
+    main.style.backgroundImage = ''
+})
+
+btnGameOfThrones.addEventListener('touchstart', () => {
+    main.style.backgroundImage = 'url(../imagens/fundo_thrones.png)';
+})
+
