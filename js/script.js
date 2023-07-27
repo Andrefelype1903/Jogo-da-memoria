@@ -3,6 +3,9 @@ const button = document.querySelector('.login_button');
 
 const form = document.querySelector('.login-form');
 
+const tela = window.innerWidth;
+console.log(tela)
+
 input.addEventListener('input', ({target}) =>  {
     if(target.value.length >= 3) {
         button.removeAttribute('disabled');
@@ -17,7 +20,13 @@ form.addEventListener('submit', (event) => {
 
     localStorage.setItem('player', input.value);
     
-    window.location = 'pages/game.html'
+    if(tela < 750) {
+        setTimeout(() => {
+            window.location = 'pages/game.html'
+        },1500)
+    } else {
+        window.location = 'pages/game.html'
+    }
     
 })
 

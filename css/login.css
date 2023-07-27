@@ -1,6 +1,10 @@
 
 
 
+body {
+  background-color: #212121;
+}
+
 .login-form {
     align-items: center;
     display: flex;
@@ -22,7 +26,7 @@
 }
 
 .login_header h1 {
-    color: #333;
+    color: #fff;
     font-size: 1.5em;
 }
 
@@ -38,60 +42,60 @@
     padding: 15px;
 } */
 
-
 /* CSS INPUT */
 .form-control {
-    position: relative;
-    margin: 20px 0 40px;
-    width: 190px;
-  }
-  
-  .form-control input {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px #888 solid;
-    display: block;
-    width: 100%;
-    padding: 15px 0 5px 0;
-    font-size: 1.6rem;
-    color: #888;
-  }
-  
-  .form-control input:focus,
-  .form-control input:valid {
-    outline: 0;
-    border-bottom-color: #888;
-  }
-  
-  .form-control label {
-    position: absolute;
-    top: 15px;
-    left: 0;
-    pointer-events: none;
-  }
-  
-  .form-control label span {
-    display: inline-block;
-    font-size: 1.6rem;
-    min-width: 5px;
-    color: #888;
-    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .form-control input:focus+label span,
-  .form-control input:valid+label span {
-    color: lightblue;
-    transform: translateY(-30px);
-  }
+  position: relative;
+  margin: 20px 0 40px;
+  width: 190px;
+}
 
-  .form-control label span:nth-child(4) {
-    margin-left: 7px;
-  }
-  /* CSS INPUT */
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0 5px 0;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: #fff;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 1.6rem;
+  min-width: 5px;
+  color: #fff;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+
+.form-control label span:nth-child(4) {
+  margin-left: 7px;
+}
+/* CSS INPUT */
 
 
 
-.login_button {
+
+/* .login_button {
     background-color: #ee665c;
     padding: 15px;
     border-radius: 8px;
@@ -100,10 +104,123 @@
     font-size: 1.5rem;
     max-width: 300px;
     width: 100%;
-}
+} */
 
 .login_button:disabled {
-    background-color: #eee;
-    color: #aaa;
+    background-color: transparent;
+    color: #888;
     cursor: auto;
 }
+
+/* CSS BOTAO */
+
+
+button,button::after {
+  padding: 10px 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+button::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'GLITCH';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+button:hover::after {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(0, 255, 213);
+}
+
+button:hover {
+  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid rgb(0, 255, 213);
+  box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+}
+
+
+
+
+/* CSS BOTAO */
+
+
