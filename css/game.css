@@ -4,7 +4,8 @@
 
 
 body {
-    background-color: #fafafa;
+    background: linear-gradient(238.72deg, #EBFF00 0%, #7700D5 100%), linear-gradient(64.82deg, #AD00FF 0%, #FF0000 100%), linear-gradient(65.03deg, #00FFFF 0%, #FF0000 99.79%), radial-gradient(67.08% 100% at 50% 0%, #FF00C7 0%, #1400FF 100%), radial-gradient(100% 140% at 100% 0%, #5ED500 0%, #2200AA 100%);
+background-blend-mode: color-dodge, difference, lighten, color-dodge, normal;
     background-image: '';
     background-size: cover;
     background-position: center;
