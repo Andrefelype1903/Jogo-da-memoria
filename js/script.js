@@ -1,5 +1,6 @@
 const input = document.querySelector('.login_input');
-const button = document.querySelector('.login_button');
+// const button = document.querySelector('.login_button');
+const button = document.querySelector('.button');
 
 const form = document.querySelector('.login-form');
 
@@ -23,7 +24,7 @@ form.addEventListener('submit', (event) => {
     if(tela < 750) {
         setTimeout(() => {
             window.location = 'pages/game.html'
-        },1500)
+        },500)
     } else {
         window.location = 'pages/game.html'
     }
