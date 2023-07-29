@@ -221,7 +221,34 @@ header {
     font-size: 1em;
     cursor: pointer;
     border-radius: 20px;
-    margin-top: 50px;
+    margin: 50px 0 100px;
+}
+
+.ranking {
+    width: 99%;
+    height: 40%;
+    /* background-color: #1400FF; */
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+}
+
+.ranking_titulo {
+    background: rgb(250, 250, 250, 0.5);
+    border-radius: 10px;
+}
+
+.podium {
+    font-size: 1.2rem;
+    width: 100%;
+    height: 19%;
+    background: rgb(250, 250, 250, 0.5);
+    margin: 1px 0 1px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .dicas {

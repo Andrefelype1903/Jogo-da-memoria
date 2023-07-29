@@ -29,17 +29,78 @@ const todosBtn = document.querySelectorAll('.btn-tema')
 const areaFundo = document.querySelector('body');
 
 const tamanhoTela = window.innerWidth;
-console.log(tamanhoTela);
 
 
 const campoParabens = document.querySelector('.parabens');
 const textoParabens = document.querySelector('.texto-parabens');
 
-const btnRecomecar = document.querySelector('.btn-recomecar')
+const btnRecomecar = document.querySelector('.btn-recomecar');
 
-const dicas = document.querySelector('.dicas')
-const btnDicaSim = document.querySelector('.btn-dica-sim')
-const btnDicaNao = document.querySelector('.btn-dica-nao')
+const dicas = document.querySelector('.dicas');
+const btnDicaSim = document.querySelector('.btn-dica-sim');
+const btnDicaNao = document.querySelector('.btn-dica-nao');
+
+//seletores do ranking
+
+const primeiroLugar = document.querySelector('.primeiro')
+const segundoLugar = document.querySelector('.segundo')
+const terceiroLugar = document.querySelector('.terceiro')
+const quartoLugar = document.querySelector('.quarto')
+const quintoLugar = document.querySelector('.quinto')
+
+//seletores do ranking
+
+
+
+const playerPassados = localStorage.getItem('rankingPlayer');
+
+const todosPlayers = JSON.parse(playerPassados);
+
+const playersGeral = []
+
+console.log(playersGeral)
+
+// console.log(todosPlayers)
+
+
+
+if(todosPlayers != null) {
+
+    todosPlayers.sort((a, b) => {
+        let tempoA = parseInt(a[0].tempo);
+        let tempoB = parseInt(b[0].tempo);
+        return tempoA - tempoB;
+      });
+      
+      // Selecionar os 5 melhores jogadores (5 primeiros elementos do array)
+      let melhoresJogadores = todosPlayers.slice(0, 5);
+      
+      // Mapear os dados dos jogadores e tempos em um novo array de objetos
+      let dadosDosJogadores = melhoresJogadores.map(jogador => {
+        return {
+          nome: jogador[0].nome,
+          tempo: parseInt(jogador[0].tempo)
+        };
+      });
+    
+      console.log("Dados dos 5 melhores jogadores:", dadosDosJogadores);
+      
+    if(todosPlayers.length > 0) {
+        primeiroLugar.textContent = `1° lugar: ${dadosDosJogadores[0].nome} // tempo: ${dadosDosJogadores[0].tempo} seg`
+    }
+    if(todosPlayers.length > 1) {
+        segundoLugar.textContent = `2° lugar: ${dadosDosJogadores[1].nome} // tempo: ${dadosDosJogadores[1].tempo} seg`
+    }
+    if(todosPlayers.length > 2) {
+        terceiroLugar.textContent = `3° lugar: ${dadosDosJogadores[2].nome} // tempo: ${dadosDosJogadores[2].tempo} seg`
+    }
+    if(todosPlayers.length > 3) {
+        quartoLugar.textContent = `4° lugar: ${dadosDosJogadores[3].nome} // tempo: ${dadosDosJogadores[3].tempo} seg`
+    }
+    if(todosPlayers.length > 4) {
+        quintoLugar.textContent = `5° lugar: ${dadosDosJogadores[4].nome} // tempo: ${dadosDosJogadores[4].tempo} seg`
+    }
+}
 
 
 const personagens = [];
@@ -271,7 +332,7 @@ const checkEndGame = () => {
 
     const disabledCard = document.querySelectorAll('.disabled-card');
 
-    if(disabledCard.length === personagens.length * 2) {
+    if(disabledCard.length === personagens.length * 2) {  // substitur para personagens.length * 2
         clearInterval(this.loop);
         setTimeout(() => {
 
@@ -280,8 +341,36 @@ const checkEndGame = () => {
             campoParabens.style.display = 'flex';
             textoParabens.textContent = `Parabens, ${spanPlayer.innerHTML}, seu tempo foi: ${timer.innerHTML} segundos`;
 
+            const nome = spanPlayer.innerHTML
+            const tempo = timer.innerHTML
+
+           let novoPlayer = [{
+                nome: nome, tempo: tempo,
+           }]
+
+           if(todosPlayers === null) {
+                playersGeral.push(novoPlayer)
+               let playerString = JSON.stringify(playersGeral);
+               localStorage.setItem('rankingPlayer', playerString);
+
+           } else {
+
+               todosPlayers.push(novoPlayer);
+               let playerGeralString = JSON.stringify(todosPlayers)
+               localStorage.setItem('rankingPlayer', playerGeralString)
+           }
+
+
         }, 500);
     }
+}
+
+localStorage.removeItem('rankingPlayer')
+
+
+
+const ranking = () => {
+    localStorage.getItem()
 }
 
 
