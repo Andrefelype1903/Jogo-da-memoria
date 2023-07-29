@@ -285,6 +285,11 @@ header {
         width: 65vw;
     }
 
+    .podium {
+        width: 100%;
+        font-size: 0.7rem;
+    }
+
 }
 
 @media screen and (min-width: 600px) {

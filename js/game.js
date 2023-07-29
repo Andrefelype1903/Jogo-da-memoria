@@ -332,7 +332,7 @@ const checkEndGame = () => {
 
     const disabledCard = document.querySelectorAll('.disabled-card');
 
-    if(disabledCard.length === personagens.length * 2) {  // substitur para personagens.length * 2
+    if(disabledCard.length === personagens.length * 2) { 
         clearInterval(this.loop);
         setTimeout(() => {
 
@@ -365,7 +365,7 @@ const checkEndGame = () => {
     }
 }
 
-localStorage.removeItem('rankingPlayer')
+// localStorage.removeItem('rankingPlayer')
 
 
 
