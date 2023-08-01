@@ -52,9 +52,11 @@ const quintoLugar = document.querySelector('.quinto')
 
 
 
+
 const playerPassados = localStorage.getItem('rankingPlayer');
 
 const todosPlayers = JSON.parse(playerPassados);
+// todosPlayers.push(novoPlayer)
 
 const playersGeral = []
 
@@ -63,42 +65,49 @@ console.log(playersGeral)
 // console.log(todosPlayers)
 
 
-
-if(todosPlayers != null) {
-
-    todosPlayers.sort((a, b) => {
-        let tempoA = parseInt(a[0].tempo);
-        let tempoB = parseInt(b[0].tempo);
-        return tempoA - tempoB;
-      });
-      
-      // Selecionar os 5 melhores jogadores (5 primeiros elementos do array)
-      let melhoresJogadores = todosPlayers.slice(0, 5);
-      
-      // Mapear os dados dos jogadores e tempos em um novo array de objetos
-      let dadosDosJogadores = melhoresJogadores.map(jogador => {
-        return {
-          nome: jogador[0].nome,
-          tempo: parseInt(jogador[0].tempo)
-        };
-      });
+const escreveRanking = () => {
+  
+    if(todosPlayers != null) {
     
-      console.log("Dados dos 5 melhores jogadores:", dadosDosJogadores);
-      
-    if(todosPlayers.length > 0) {
-        primeiroLugar.textContent = `1° lugar: ${dadosDosJogadores[0].nome} // tempo: ${dadosDosJogadores[0].tempo} seg`
-    }
-    if(todosPlayers.length > 1) {
-        segundoLugar.textContent = `2° lugar: ${dadosDosJogadores[1].nome} // tempo: ${dadosDosJogadores[1].tempo} seg`
-    }
-    if(todosPlayers.length > 2) {
-        terceiroLugar.textContent = `3° lugar: ${dadosDosJogadores[2].nome} // tempo: ${dadosDosJogadores[2].tempo} seg`
-    }
-    if(todosPlayers.length > 3) {
-        quartoLugar.textContent = `4° lugar: ${dadosDosJogadores[3].nome} // tempo: ${dadosDosJogadores[3].tempo} seg`
-    }
-    if(todosPlayers.length > 4) {
-        quintoLugar.textContent = `5° lugar: ${dadosDosJogadores[4].nome} // tempo: ${dadosDosJogadores[4].tempo} seg`
+        todosPlayers.sort((a, b) => {
+            let tempoA = parseInt(a[0].tempo);
+            let tempoB = parseInt(b[0].tempo);
+            return tempoA - tempoB;
+          });
+          
+          // Selecionar os 5 melhores jogadores (5 primeiros elementos do array)
+          let melhoresJogadores = todosPlayers.slice(0, 5);
+          
+          // Mapear os dados dos jogadores e tempos em um novo array de objetos
+          let dadosDosJogadores = melhoresJogadores.map(jogador => {
+            return {
+              nome: jogador[0].nome,
+              tempo: parseInt(jogador[0].tempo)
+            };
+          });
+        
+          console.log("Dados dos 5 melhores jogadores:", dadosDosJogadores);
+          
+        if(todosPlayers.length > 0) {
+            primeiroLugar.style.background = 'rgb(250, 250, 250, 0.5)'
+            primeiroLugar.textContent = `1°: ${dadosDosJogadores[0].nome} //  ${dadosDosJogadores[0].tempo} segundos`
+        }
+        if(todosPlayers.length > 1) {
+            segundoLugar.style.background = 'rgb(250, 250, 250, 0.5)'
+            segundoLugar.textContent = `2°: ${dadosDosJogadores[1].nome} // ${dadosDosJogadores[1].tempo} segundos`
+        }
+        if(todosPlayers.length > 2) {
+            terceiroLugar.style.background = 'rgb(250, 250, 250, 0.5)'
+            terceiroLugar.textContent = `3°: ${dadosDosJogadores[2].nome} // ${dadosDosJogadores[2].tempo} segundos`
+        }
+        if(todosPlayers.length > 3) {
+            quartoLugar.style.background = 'rgb(250, 250, 250, 0.5)'
+            quartoLugar.textContent = `4°: ${dadosDosJogadores[3].nome} // ${dadosDosJogadores[3].tempo} segundos`
+        }
+        if(todosPlayers.length > 4) {
+            quintoLugar.style.background = 'rgb(250, 250, 250, 0.5)'
+            quintoLugar.textContent = `5°: ${dadosDosJogadores[4].nome} // ${dadosDosJogadores[4].tempo} segundos`
+        }
     }
 }
 
@@ -328,6 +337,8 @@ const createElement = (tag, className) => {
 let firstCard = '';
 let secondCard = '';
 
+
+
 const checkEndGame = () => {
 
     const disabledCard = document.querySelectorAll('.disabled-card');
@@ -344,34 +355,34 @@ const checkEndGame = () => {
             const nome = spanPlayer.innerHTML
             const tempo = timer.innerHTML
 
-           let novoPlayer = [{
-                nome: nome, tempo: tempo,
+           novoPlayer = [{
+                nome: spanPlayer.innerHTML, tempo: timer.innerHTML,
            }]
 
            if(todosPlayers === null) {
+
+                primeiroLugar.style.background = 'rgb(250, 250, 250, 0.5)'
+                primeiroLugar.textContent = `1°: ${spanPlayer.innerHTML} //  ${timer.innerHTML} segundos`
+
+
                 playersGeral.push(novoPlayer)
-               let playerString = JSON.stringify(playersGeral);
-               localStorage.setItem('rankingPlayer', playerString);
+                let playerString = JSON.stringify(playersGeral);
+                localStorage.setItem('rankingPlayer', playerString);
+                todosPlayers.push(novoPlayer)
 
            } else {
 
                todosPlayers.push(novoPlayer);
                let playerGeralString = JSON.stringify(todosPlayers)
                localStorage.setItem('rankingPlayer', playerGeralString)
+               escreveRanking()
            }
-
 
         }, 500);
     }
 }
 
 // localStorage.removeItem('rankingPlayer')
-
-
-
-const ranking = () => {
-    localStorage.getItem()
-}
 
 
 const checkCards = () => {
@@ -477,8 +488,17 @@ const startTimer = () => {
 
     this.loop = setInterval(() => {
 
+        let segundos = 0;
+        let minutos = 0;
+
         const currentTime = +timer.innerHTML;
-        timer.innerHTML = currentTime + 1;
+
+        segundos = currentTime + 1;
+
+        
+        timer.innerHTML = segundos;
+        
+    
 
         if(timer.innerHTML > 60 && timer.innerHTML < 62) {
             dicas.style.display = 'flex'
