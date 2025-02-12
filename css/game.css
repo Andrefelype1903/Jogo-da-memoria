@@ -50,7 +50,7 @@ header {
     max-width: 400px;
     margin-bottom: 20px;
     font-size: 1em;
-    display: flex;
+    display: flex;/* ajustar */
     position: absolute;
     flex-direction: column;
     padding: 20px;
@@ -296,7 +296,7 @@ header {
 
 footer {
     margin-top: 10px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
   }

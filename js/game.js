@@ -8,6 +8,7 @@ const timer = document.querySelector('.timer');
 const header = document.querySelector('header');
 const main = document.querySelector('main');
 const temas = document.querySelector('.temas');
+const rodape = document.querySelector('.rodape')
 
 
 
@@ -138,7 +139,7 @@ const temaRickAndMorty = () => {
     backCardBorder = '2px solid #39813a';
     faceCards = '2px solid #39813a';
     campoParabens.style.backgroundImage = 'url(../imagens/rick_and_morty.jpg)'
-
+    rodape.style.display = 'flex';
 }
 
 const temaDragonBallZ = () => {
@@ -162,6 +163,7 @@ const temaDragonBallZ = () => {
     backCardBorder = '2px solid #ffff00';
     faceCards = '2px solid #ffff00';
     campoParabens.style.backgroundImage = 'url(../imagens/parabens.png)'
+    rodape.style.display = 'flex';
 }
 
 const temaOsSimpsons = () => {
@@ -185,6 +187,7 @@ const temaOsSimpsons = () => {
     backCardBorder = '2px solid #ffd700';
     faceCards = '2px solid #ffd700';
     campoParabens.style.backgroundImage = 'url(../imagens/wallpapersden.com_bart-4k-simpson_3840x2160.png)'
+    rodape.style.display = 'flex';
 }
 
 const temaNarutoShippuden = () => {
@@ -209,6 +212,7 @@ const temaNarutoShippuden = () => {
     backCardBorder = '2px solid #ff0000';
     faceCards = '2px solid #ff0000';
     campoParabens.style.backgroundImage = 'url(../imagens/parabens_naruto.jpg)';
+    rodape.style.display = 'flex';
 }
 
 const temaAvengers = () => {
@@ -232,6 +236,7 @@ const temaAvengers = () => {
     backCardBorder = '2px solid #800080';
     faceCards = '2px solid #800080';
     campoParabens.style.backgroundImage = 'url(../imagens/parabens_avengers.jpg)';
+    rodape.style.display = 'flex';
 }
 
 const temaGodofWarRagnarok = () => {
@@ -256,6 +261,7 @@ const temaGodofWarRagnarok = () => {
     backCardBorder = '2px solid #add8e6';
     faceCards = '2px solid #add8e6';
     campoParabens.style.backgroundImage = 'url(../imagens/parabens_ragnarok.png)';
+    rodape.style.display = 'flex';
 }
 
 const temaTheLastOfUs = () => {
@@ -279,6 +285,7 @@ const temaTheLastOfUs = () => {
     backCardBorder = '2px solid #4b3621';
     faceCards = '2px solid #4b3621';
     campoParabens.style.backgroundImage = 'url(../imagens/parabens_the_last_of_us.png)';
+    rodape.style.display = 'flex';
 }
 
 const temaResidentEvil = () => {
@@ -301,6 +308,7 @@ const temaResidentEvil = () => {
     backCardBorder = '2px solid #ff0000';
     faceCards = '2px solid #ff0000';
     campoParabens.style.backgroundImage = 'url(../imagens/parabens_resident.png)';
+    rodape.style.display = 'flex';
 }
 
 const temaGameOfThrones = () => {
@@ -324,6 +332,7 @@ const temaGameOfThrones = () => {
     backCardBorder = '2px solid #888';
     faceCards = '2px solid #888';
     campoParabens.style.backgroundImage = 'url(../imagens/parabens_thrones.png)';
+    rodape.style.display = 'flex';
 }
 
 
