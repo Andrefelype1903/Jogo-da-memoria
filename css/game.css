@@ -80,57 +80,57 @@ header {
 }
 
 .temas button:nth-child(2):hover {
-    background-image: url(../imagens/fundo_botao_rick.png);
+    background-image: url(../imagens/fundo_botao_rick.webp);
     background-size: cover;
     background-position: center;
 
 }
 
 .temas button:nth-child(3):hover {
-    background-image: url(../imagens/nCgtBc.png);
+    background-image: url(../imagens/ncgtbc.webp);
     background-size: cover;
     background-position: center;
 }
 
 
 .temas button:nth-child(4):hover {
-    background-image: url(../imagens/fundo_botao.png);
+    background-image: url(../imagens/fundo_botao.webp);
     background-size: cover;
     background-position: center;
 }
 
 .temas button:nth-child(5):hover {
-    background-image: url(../imagens/botao_akatsuki.png);
+    background-image: url(../imagens/botao_akatsuki.webp);
     background-size: cover;
     background-position: center;
 }
 
 .temas button:nth-child(6):hover {
-    background-image: url(../imagens/botao_avengers.png);
+    background-image: url(../imagens/botao_avengers.webp);
     background-size: cover;
     background-position: center;
 }
 
 .temas button:nth-child(7):hover {
-    background-image: url(../imagens/fundo_botao_ragnarok.jpg);
+    background-image: url(../imagens/fundo_botao_ragnarok.webp);
     background-size: cover;
     background-position: center;
 }
 
 .temas button:nth-child(8):hover {
-    background-image: url(../imagens/fundo_botao_ellie.jpg);
+    background-image: url(../imagens/fundo_botao_ellie.webp);
     background-size: cover;
     background-position: center;
 }
 
 .temas button:nth-child(9):hover {
-    background-image: url(../imagens/fundo_botao_resident_evil.png);
+    background-image: url(../imagens/fundo_botao_resident_evil.webp);
     background-size: cover;
     background-position: center;
 }
 
 .temas button:nth-child(10):hover {
-    background-image: url(../imagens/fundo_botao_thrones.png);
+    background-image: url(../imagens/fundo_botao_thrones.webp);
     background-size: cover;
     background-position: center;
 }

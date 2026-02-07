@@ -123,7 +123,8 @@ const temaRickAndMorty = () => {
     temas.style.display = 'none';
   
     header.style.display = 'flex';
-    personagens.push(  'beth',
+    personagens.push(  
+    'beth',
     'jerry',
     'jessica',
     'morty',
@@ -134,11 +135,11 @@ const temaRickAndMorty = () => {
     'scroopy',
     'summer',);
 
-    areaFundo.style.backgroundImage = 'url(../imagens/bg.jpg)'
-    backCards = 'url(../imagens/back.png)';
+    areaFundo.style.backgroundImage = 'url(../imagens/bg.webp)'
+    backCards = 'url(../imagens/back.webp)';
     backCardBorder = '2px solid #39813a';
     faceCards = '2px solid #39813a';
-    campoParabens.style.backgroundImage = 'url(../imagens/rick_and_morty.jpg)'
+    campoParabens.style.backgroundImage = 'url(../imagens/rick_and_morty.webp)'
     rodape.style.display = 'flex';
 }
 
@@ -147,7 +148,8 @@ const temaDragonBallZ = () => {
     temas.style.display = 'none';
   
     header.style.display = 'flex';
-    personagens.push('cell',
+    personagens.push(
+    'cell',
     'freeza',
     'gohan',
     'picolo',
@@ -158,11 +160,11 @@ const temaDragonBallZ = () => {
     'trunks',
     'vegeta',);
 
-    areaFundo.style.backgroundImage = 'url(../imagens/thumb-1920-933307.png)'
-    backCards = 'url(../imagens/wp7382693.png)';
+    areaFundo.style.backgroundImage = 'url(../imagens/thumb-1920-933307.webp)'
+    backCards = 'url(../imagens/wp7382693.webp)';
     backCardBorder = '2px solid #ffff00';
     faceCards = '2px solid #ffff00';
-    campoParabens.style.backgroundImage = 'url(../imagens/parabens.png)'
+    campoParabens.style.backgroundImage = 'url(../imagens/parabens.webp)'
     rodape.style.display = 'flex';
 }
 
@@ -171,7 +173,8 @@ const temaOsSimpsons = () => {
     temas.style.display = 'none';
   
     header.style.display = 'flex';
-    personagens.push('apy',
+    personagens.push(
+    'apy',
     'barnes',
     'barth',
     'flanders',
@@ -182,11 +185,11 @@ const temaOsSimpsons = () => {
     'margie',
     'noia',);
 
-    areaFundo.style.backgroundImage = 'url(../imagens/Os_Simpsons_logo.jpg)'
-    backCards = 'url(../imagens/hemer_back.png)';
+    areaFundo.style.backgroundImage = 'url(../imagens/Os_Simpsons_logo.webp)'
+    backCards = 'url(../imagens/hemer_back.webp)';
     backCardBorder = '2px solid #ffd700';
     faceCards = '2px solid #ffd700';
-    campoParabens.style.backgroundImage = 'url(../imagens/wallpapersden.com_bart-4k-simpson_3840x2160.png)'
+    campoParabens.style.backgroundImage = 'url(../imagens/wallpapersden_com_bart_4k_simpson_3840x2160.webp)'
     rodape.style.display = 'flex';
 }
 
@@ -195,7 +198,8 @@ const temaNarutoShippuden = () => {
     temas.style.display = 'none';
   
     header.style.display = 'flex';
-    personagens.push( 'naruto',
+    personagens.push( 
+    'naruto',
     'sasuke',
     'jiraya',
     'minato',
@@ -206,12 +210,12 @@ const temaNarutoShippuden = () => {
     'kakashi',
     'madara',);
 
-    areaFundo.style.backgroundImage = 'url(../imagens/fundo_naruto.jpg)';
+    areaFundo.style.backgroundImage = 'url(../imagens/fundo_naruto.webp)';
     areaFundo.style.backgroundPosition = '70%';
-    backCards = 'url(../imagens/back_naruto.png)';
+    backCards = 'url(../imagens/back_naruto.webp)';
     backCardBorder = '2px solid #ff0000';
     faceCards = '2px solid #ff0000';
-    campoParabens.style.backgroundImage = 'url(../imagens/parabens_naruto.jpg)';
+    campoParabens.style.backgroundImage = 'url(../imagens/parabens_naruto.webp)';
     rodape.style.display = 'flex';
 }
 
@@ -220,7 +224,8 @@ const temaAvengers = () => {
     temas.style.display = 'none';
   
     header.style.display = 'flex';
-    personagens.push( 'strange',
+    personagens.push( 
+    'strange',
     'capitao_america',
     'homem_aranha',
     'homem_de_ferro',
@@ -231,11 +236,11 @@ const temaAvengers = () => {
     'thanos',
     'ultron',);
 
-    areaFundo.style.backgroundImage = 'url(../imagens/fundo_avengers.jpg)';
-    backCards = 'url(../imagens/back2_avengers.png)';
+    areaFundo.style.backgroundImage = 'url(../imagens/fundo_avengers.webp)';
+    backCards = 'url(../imagens/back2_avengers.webp)';
     backCardBorder = '2px solid #800080';
     faceCards = '2px solid #800080';
-    campoParabens.style.backgroundImage = 'url(../imagens/parabens_avengers.jpg)';
+    campoParabens.style.backgroundImage = 'url(../imagens/parabens_avengers.webp)';
     rodape.style.display = 'flex';
 }
 
@@ -244,7 +249,8 @@ const temaGodofWarRagnarok = () => {
     temas.style.display = 'none';
   
     header.style.display = 'flex';
-    personagens.push( 'angrboda',
+    personagens.push( 
+    'angrboda',
     'brok',
     'sindri',
     'kratos',
@@ -255,12 +261,12 @@ const temaGodofWarRagnarok = () => {
     'elfo_escuro',
     'thor',);
 
-    areaFundo.style.backgroundImage = 'url(../imagens/fundo_botao_ragnarok.jpg)';
+    areaFundo.style.backgroundImage = 'url(../imagens/fundo_ragnarok.webp)';
     areaFundo.style.backgroundPosition = '70%'
-    backCards = 'url(../imagens/back_ragnarok.png)';
+    backCards = 'url(../imagens/back_ragnarok.webp)';
     backCardBorder = '2px solid #add8e6';
     faceCards = '2px solid #add8e6';
-    campoParabens.style.backgroundImage = 'url(../imagens/parabens_ragnarok.png)';
+    campoParabens.style.backgroundImage = 'url(../imagens/parabens_ragnarok.webp)';
     rodape.style.display = 'flex';
 }
 
@@ -269,7 +275,8 @@ const temaTheLastOfUs = () => {
     temas.style.display = 'none';
   
     header.style.display = 'flex';
-    personagens.push( 'ellie',
+    personagens.push( 
+    'ellie',
     'joel',
     'abby',
     'rat_king',
@@ -280,11 +287,11 @@ const temaTheLastOfUs = () => {
     'jessie',
     'clicker',);
 
-    areaFundo.style.backgroundImage = 'url(../imagens/fundo_the_last_of_us.jpeg)';
-    backCards = 'url(../imagens/back_the_last_of_us.png)';
+    areaFundo.style.backgroundImage = 'url(../imagens/fundo_the_last_of_us.webp)';
+    backCards = 'url(../imagens/back_the_last_of_us.webp)';
     backCardBorder = '2px solid #4b3621';
     faceCards = '2px solid #4b3621';
-    campoParabens.style.backgroundImage = 'url(../imagens/parabens_the_last_of_us.png)';
+    campoParabens.style.backgroundImage = 'url(../imagens/parabens_the_last_of_us.webp)';
     rodape.style.display = 'flex';
 }
 
@@ -292,7 +299,8 @@ const temaResidentEvil = () => {
     temas.style.display = 'none';
   
     header.style.display = 'flex';
-    personagens.push( 'ada',
+    personagens.push(
+    'ada',
     'chris',
     'ashley',
     'claire_redfield',
@@ -303,11 +311,11 @@ const temaResidentEvil = () => {
     'mia',
     'nemesis',);
 
-    areaFundo.style.backgroundImage = 'url(../imagens/tela_fundo_resident-evil.jpg)';
-    backCards = 'url(../imagens/back_resident_evil.png)';
+    areaFundo.style.backgroundImage = 'url(../imagens/tela_fundo_resident-evil.webp)';
+    backCards = 'url(../imagens/back_resident_evil.webp)';
     backCardBorder = '2px solid #ff0000';
     faceCards = '2px solid #ff0000';
-    campoParabens.style.backgroundImage = 'url(../imagens/parabens_resident.png)';
+    campoParabens.style.backgroundImage = 'url(../imagens/parabens_resident.webp)';
     rodape.style.display = 'flex';
 }
 
@@ -315,7 +323,8 @@ const temaGameOfThrones = () => {
     temas.style.display = 'none';
   
     header.style.display = 'flex';
-    personagens.push( 'sansa',
+    personagens.push( 
+    'sansa',
     'jaime',
     'missandei',
     'rei_da_noite',
@@ -326,12 +335,12 @@ const temaGameOfThrones = () => {
     'arya',
     'tiryon',);
 
-    areaFundo.style.backgroundImage = 'url(../imagens/fundo_thrones.png)';
+    areaFundo.style.backgroundImage = 'url(../imagens/fundo_thrones.webp)';
     areaFundo.style.backgroundPosition = '70%';
-    backCards = 'url(../imagens/back_thrones.png)';
+    backCards = 'url(../imagens/back_thrones.webp)';
     backCardBorder = '2px solid #888';
     faceCards = '2px solid #888';
-    campoParabens.style.backgroundImage = 'url(../imagens/parabens_thrones.png)';
+    campoParabens.style.backgroundImage = 'url(../imagens/parabens_thrones.webp)';
     rodape.style.display = 'flex';
 }
 
@@ -447,7 +456,7 @@ const createCard = (personagens) => {
     const front = createElement('div', 'face front');
     const back = createElement('div', 'face back');
 
-    front.style.backgroundImage = `url(../imagens/${personagens}.png)`
+    front.style.backgroundImage = `url(../imagens/${personagens}.webp)`
     back.style.backgroundImage = backCards;
     back.style.border = backCardBorder;
     front.style.border = faceCards;
@@ -512,6 +521,8 @@ const startTimer = () => {
         if(timer.innerHTML > 60 && timer.innerHTML < 62) {
             dicas.style.display = 'flex'
         }
+
+
 
     }, 1000)
    
