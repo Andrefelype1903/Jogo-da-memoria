@@ -581,7 +581,7 @@ btnRick.addEventListener('click', () => {
 })
 
 btnRick.addEventListener('mouseover', () => {
-    main.style.backgroundImage = 'url(../imagens/bg.jpg)'
+    main.style.backgroundImage = 'url(../imagens/bg.webp)'
 })
 
 btnRick.addEventListener('mouseout', () => {
@@ -590,7 +590,7 @@ btnRick.addEventListener('mouseout', () => {
 
 btnRick.addEventListener('touchstart', () => {
     console.log('cliquei com touch')
-    main.style.backgroundImage = 'url(../imagens/bg.jpg)'
+    main.style.backgroundImage = 'url(../imagens/bg.webp)'
 })
 
 
@@ -609,7 +609,7 @@ btndragon.addEventListener('click', () => {
 })
 
 btndragon.addEventListener('mouseover', () => {
-   main.style.backgroundImage = 'url(../imagens/thumb-1920-933307.png)'
+   main.style.backgroundImage = 'url(../imagens/thumb-1920-933307.webp)'
 })
 
 btndragon.addEventListener('mouseout', () => {
@@ -617,7 +617,7 @@ btndragon.addEventListener('mouseout', () => {
 })
 
 btndragon.addEventListener('touchstart', () => {
-   main.style.backgroundImage = 'url(../imagens/thumb-1920-933307.png)'
+   main.style.backgroundImage = 'url(../imagens/thumb-1920-933307.webp)'
 })
 
 
@@ -636,7 +636,7 @@ btnSimpsons.addEventListener('click', () => {
 })
 
 btnSimpsons.addEventListener('mouseover', () => {
-    main.style.backgroundImage = 'url(../imagens/Os_Simpsons_logo.jpg)'
+    main.style.backgroundImage = 'url(../imagens/Os_Simpsons_logo.webp)'
 })
 
 btnSimpsons.addEventListener('mouseout', () => {
@@ -644,7 +644,7 @@ btnSimpsons.addEventListener('mouseout', () => {
 })
 
 btnSimpsons.addEventListener('touchstart', () => {
-    main.style.backgroundImage = 'url(../imagens/Os_Simpsons_logo.jpg)'
+    main.style.backgroundImage = 'url(../imagens/Os_Simpsons_logo.webp)'
 })
 
 
@@ -663,7 +663,7 @@ btnNaruto.addEventListener('click', () => {
 })
  
 btnNaruto.addEventListener('mouseover', () => {
-    main.style.backgroundImage = 'url(../imagens/fundo_naruto.jpg)'
+    main.style.backgroundImage = 'url(../imagens/fundo_naruto.webp)'
     main.style.backgroundPosition = '70%';
 })
 
@@ -672,7 +672,7 @@ btnNaruto.addEventListener('mouseout', () => {
 })
 
 btnNaruto.addEventListener('touchstart', () => {
-    main.style.backgroundImage = 'url(../imagens/fundo_naruto.jpg)'
+    main.style.backgroundImage = 'url(../imagens/fundo_naruto.webp)'
     main.style.backgroundPosition = '70%';
 })
 
@@ -692,7 +692,7 @@ btnAvengers.addEventListener('click', () => {
 })
 
 btnAvengers.addEventListener('mouseover', () => {
-    main.style.backgroundImage = 'url(../imagens/fundo_avengers.jpg)';
+    main.style.backgroundImage = 'url(../imagens/fundo_avengers.webp)';
 })
 
 btnAvengers.addEventListener('mouseout', () => {
@@ -700,7 +700,7 @@ btnAvengers.addEventListener('mouseout', () => {
 })
 
 btnAvengers.addEventListener('touchstart', () => {
-    main.style.backgroundImage = 'url(../imagens/fundo_avengers.jpg)';
+    main.style.backgroundImage = 'url(../imagens/fundo_avengers.webp)';
 })
 
 
@@ -720,7 +720,7 @@ btngodOfWar.addEventListener('click', () => {
 })
 
 btngodOfWar.addEventListener('mouseover', () => {
-    main.style.backgroundImage = 'url(../imagens/fundo_botao_ragnarok.jpg)';
+    main.style.backgroundImage = 'url(../imagens/fundo_botao_ragnarok.webp)';
     main.style.backgroundPosition = '70%';
 })
 
@@ -729,7 +729,7 @@ btngodOfWar.addEventListener('mouseout', () => {
 })
 
 btngodOfWar.addEventListener('touchstart', () => {
-    main.style.backgroundImage = 'url(../imagens/fundo_botao_ragnarok.jpg)';
+    main.style.backgroundImage = 'url(../imagens/fundo_botao_ragnarok.webp)';
     main.style.backgroundPosition = '70%';
 })
 
@@ -749,7 +749,7 @@ btnTheLastOfUs.addEventListener('click', () => {
 })
 
 btnTheLastOfUs.addEventListener('mouseover', () => {
-    main.style.backgroundImage = 'url(../imagens/fundo_the_last_of_us.jpeg)';
+    main.style.backgroundImage = 'url(../imagens/fundo_the_last_of_us.webp)';
 })
 
 btnTheLastOfUs.addEventListener('mouseout', () => {
@@ -757,7 +757,7 @@ btnTheLastOfUs.addEventListener('mouseout', () => {
 })
 
 btnTheLastOfUs.addEventListener('touchstart', () => {
-    main.style.backgroundImage = 'url(../imagens/fundo_the_last_of_us.jpeg)';
+    main.style.backgroundImage = 'url(../imagens/fundo_the_last_of_us.webp)';
 })
 
 // Botao Resident Evil
@@ -775,7 +775,7 @@ btnResidentEvil.addEventListener('click', () => {
 })
 
 btnResidentEvil.addEventListener('mouseover', () => {
-    main.style.backgroundImage = 'url(../imagens/tela_fundo_resident-evil.jpg)';
+    main.style.backgroundImage = 'url(../imagens/tela_fundo_resident-evil.webp)';
 })
 
 btnResidentEvil.addEventListener('mouseout', () => {
@@ -783,7 +783,7 @@ btnResidentEvil.addEventListener('mouseout', () => {
 })
 
 btnResidentEvil.addEventListener('touchstart', () => {
-    main.style.backgroundImage = 'url(../imagens/tela_fundo_resident-evil.jpg)';
+    main.style.backgroundImage = 'url(../imagens/tela_fundo_resident-evil.webp)';
 })
 
 
@@ -802,7 +802,7 @@ btnGameOfThrones.addEventListener('click', () => {
 })
 
 btnGameOfThrones.addEventListener('mouseover', () => {
-    main.style.backgroundImage = 'url(../imagens/fundo_thrones.png)';
+    main.style.backgroundImage = 'url(../imagens/fundo_thrones.webp)';
 })
 
 btnGameOfThrones.addEventListener('mouseout', () => {
@@ -810,6 +810,6 @@ btnGameOfThrones.addEventListener('mouseout', () => {
 })
 
 btnGameOfThrones.addEventListener('touchstart', () => {
-    main.style.backgroundImage = 'url(../imagens/fundo_thrones.png)';
+    main.style.backgroundImage = 'url(../imagens/fundo_thrones.webp)';
 })
 
